@@ -214,10 +214,12 @@ Public Class Main
         If seen = False Then
             output.Text = selectedStudySet.getSet.Item(index).getTerm
             termOrDef.Text = "Term"
+            output.BackColor = Color.FromArgb(192, 255, 192)
             seen = True
         Else
             output.Text = selectedStudySet.getSet.Item(index).getDefinition
             termOrDef.Text = "Definition"
+            output.BackColor = Color.FromArgb(255, 255, 192)
             seen = False
         End If
 
@@ -228,5 +230,4 @@ Public Class Main
         collection.Remove(selectedStudySet)
         loadListView2()
     End Sub
-
 End Class

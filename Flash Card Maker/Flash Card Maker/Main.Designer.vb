@@ -354,6 +354,7 @@ Partial Class Main
         Me.Flashcards.Controls.Add(Me.output)
         Me.Flashcards.Controls.Add(Me.termOrDef)
         Me.Flashcards.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Flashcards.ForeColor = System.Drawing.SystemColors.ActiveCaption
         Me.Flashcards.Location = New System.Drawing.Point(0, 0)
         Me.Flashcards.Name = "Flashcards"
         Me.Flashcards.Size = New System.Drawing.Size(658, 533)
@@ -404,7 +405,9 @@ Partial Class Main
         '
         'output
         '
-        Me.output.BorderColor = System.Drawing.Color.SeaGreen
+        Me.output.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.output.BorderColor = System.Drawing.Color.LimeGreen
+        Me.output.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.output.Font = New System.Drawing.Font("Century Gothic", 15.0!)
         Me.output.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(92, Byte), Integer))
         Me.output.Location = New System.Drawing.Point(22, 189)

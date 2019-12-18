@@ -5,7 +5,8 @@ Module ConfigReader
     Public found1stHash As New Boolean
     Public found2ndHash As New Boolean
     Public lineNumber As Integer
-    Private collection As List(Of StudySet)
+    Private collection As New List(Of StudySet)
+    Public enabledCreationFromFile As Boolean
 
     'gets created according to the number of study sets detected
     Private currStudySet As StudySet
@@ -17,8 +18,11 @@ Module ConfigReader
     End Function
     Public Function readConfig()
         If willCreate() Then
+            enabledCreationFromFile = True
             collection = New List(Of StudySet) 'create a new collection
             readToCreate()
+        Else
+            enabledCreationFromFile = False
         End If
 
         If willDelete() Then

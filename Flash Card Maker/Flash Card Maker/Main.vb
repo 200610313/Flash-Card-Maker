@@ -33,13 +33,11 @@ Public Class Main
 
         Dim x As StudySet
 
-        For Each x In collectionFromFile
-            collection.Add(x)
-        Next
-
-
-
-
+        If enabledCreationFromFile Then
+            For Each x In collectionFromFile
+                collection.Add(x)
+            Next
+        End If
 
         Create_Click(sender, e)
     End Sub

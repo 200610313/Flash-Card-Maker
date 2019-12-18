@@ -12,12 +12,13 @@ Public Class Main
     Private index As Integer
     Private seen As Boolean
     Private atFlashCards As Boolean
-
+    Private atDelete As Boolean
 
     'This function is run at startup
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Retrieve data of collection from saved file at first load
         'restore the class from a file
+        atDelete = False
         atFlashCards = False
         Me.KeyPreview = True 'to capture key presses
         formatter = New BinaryFormatter()
@@ -79,6 +80,7 @@ Public Class Main
     End Sub
     'Create button
     Private Sub Create_Click(sender As Object, e As EventArgs) Handles Create.Click
+        atDelete = False
         atFlashCards = False
         currStudySet = New CreateStudySet()
         Stdy.SendToBack()
@@ -137,6 +139,7 @@ Public Class Main
     End Sub
     'Study button
     Public Sub Study_Click(sender As Object, e As EventArgs) Handles Study.Click
+        atDelete = False
         atFlashCards = False
         Crt.SendToBack()
         slct.BringToFront()
@@ -157,6 +160,7 @@ Public Class Main
     End Sub
     'Delete button
     Private Sub Delete_Click(sender As Object, e As EventArgs) Handles Delete.Click
+        atDelete = True
         atFlashCards = False
         Crt.SendToBack()
         deletionPanel.BringToFront()
@@ -264,6 +268,10 @@ Public Class Main
 
         If atFlashCards And e.KeyCode = Keys.D Then
             lefty_Click(sender, e)
+        End If
+
+        If atDelete And e.KeyCode = Keys.Delete Then
+            deleteButton_Click(sender, e)
         End If
     End Sub
 End Class

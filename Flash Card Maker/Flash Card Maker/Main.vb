@@ -11,11 +11,14 @@ Public Class Main
     Private selectedStudySet As StudySet
     Private index As Integer
     Private seen As Boolean
+    Private atFlashCards As Boolean
 
     'This function is run at startup
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Retrieve data of collection from saved file at first load
         'restore the class from a file
+        atFlashCards = False
+        Me.KeyPreview = True 'to capture key presses
         formatter = New BinaryFormatter()
         stream = File.OpenRead("data.txt")
         collection = formatter.Deserialize(stream)
@@ -62,6 +65,7 @@ Public Class Main
     End Sub
     'Create button
     Private Sub Create_Click(sender As Object, e As EventArgs) Handles Create.Click
+        atFlashCards = False
         currStudySet = New CreateStudySet()
         Stdy.SendToBack()
         Crt.BringToFront()
@@ -119,6 +123,7 @@ Public Class Main
     End Sub
     'Study button
     Public Sub Study_Click(sender As Object, e As EventArgs) Handles Study.Click
+        atFlashCards = False
         Crt.SendToBack()
         slct.BringToFront()
         loadListView()
@@ -138,6 +143,7 @@ Public Class Main
     End Sub
     'Delete button
     Private Sub Delete_Click(sender As Object, e As EventArgs) Handles Delete.Click
+        atFlashCards = False
         Crt.SendToBack()
         deletionPanel.BringToFront()
         loadListView2()
@@ -173,11 +179,13 @@ Public Class Main
 
 
     Private Sub selectBtn_Click(sender As Object, e As EventArgs) Handles selectBtn.Click
+        atFlashCards = True
         selectedStudySet = findSetWithTitle(ListOfSets.SelectedItems(0).Text)
         Stdy.BringToFront()
         progressbar.Value = ((index + 1) / selectedStudySet.getSet.Count) * 100
         output.Text = selectedStudySet.getSet.Item(index).getDefinition
         termOrDef.Text = "Definition"
+        output.BackColor = Color.FromArgb(255, 255, 192)
     End Sub
 
     Private Function findSetWithTitle(text As String) As StudySet
@@ -229,5 +237,19 @@ Public Class Main
         selectedStudySet = findSetWithTitle(ListOfSetsDupe.SelectedItems(0).Text)
         collection.Remove(selectedStudySet)
         loadListView2()
+    End Sub
+
+    Private Sub Main_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+        If atFlashCards And (e.KeyCode = Keys.W Or e.KeyCode = Keys.S) Then
+            reveal_Click(sender, e)
+        End If
+
+        If atFlashCards And e.KeyCode = Keys.A Then
+            righty_Click(sender, e)
+        End If
+
+        If atFlashCards And e.KeyCode = Keys.D Then
+            lefty_Click(sender, e)
+        End If
     End Sub
 End Class

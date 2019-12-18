@@ -1,4 +1,6 @@
-﻿<Serializable()>
+﻿'Creates a temporary Study Set that will be added
+'to collection when user has finalized the set creation
+<Serializable()>
 Class CreateStudySet
     Private title As String
     Private date_ As String

@@ -78,6 +78,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConfigReader.vb" />
     <Compile Include="CreateStudySet.vb" />
     <Compile Include="Item.vb" />
     <Compile Include="Main.vb">

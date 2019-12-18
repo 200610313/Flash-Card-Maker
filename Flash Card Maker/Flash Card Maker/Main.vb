@@ -23,8 +23,24 @@ Public Class Main
         stream = File.OpenRead("data.txt")
         collection = formatter.Deserialize(stream)
         stream.Close()
+
         index = 0 'used for flashcards
         seen = False 'used for flashcards
+
+        readConfig() 'load ini file
+        Dim collectionFromFile As New List(Of StudySet)
+        collectionFromFile = getCollectionFromFile()
+
+        Dim x As StudySet
+
+        For Each x In collectionFromFile
+            collection.Add(x)
+        Next
+
+
+
+
+
         Create_Click(sender, e)
     End Sub
 
@@ -46,7 +62,6 @@ Public Class Main
             SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0)
         End If
     End Sub
-
 
     'Minimize button
     Public Sub minimizeBtn_Click(sender As Object, e As EventArgs) Handles minimizeBtn.Click

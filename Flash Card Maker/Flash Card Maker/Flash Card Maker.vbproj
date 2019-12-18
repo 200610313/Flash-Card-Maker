@@ -79,7 +79,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CreateStudySet.vb" />
-    <Compile Include="Create.vb" />
     <Compile Include="Item.vb" />
     <Compile Include="Main.vb">
       <SubType>Form</SubType>

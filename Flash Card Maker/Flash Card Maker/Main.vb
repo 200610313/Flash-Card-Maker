@@ -213,7 +213,7 @@ Public Class Main
     Private Sub reveal_Click(sender As Object, e As EventArgs) Handles reveal.Click
         If seen = False Then
             output.Text = selectedStudySet.getSet.Item(index).getTerm
-            termOrDef.Text = "Answer"
+            termOrDef.Text = "Term"
             seen = True
         Else
             output.Text = selectedStudySet.getSet.Item(index).getDefinition

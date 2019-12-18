@@ -33,8 +33,8 @@ Partial Class Main
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Logo = New System.Windows.Forms.Panel()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.studentassistant = New System.Windows.Forms.Label()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.BunifuCustomLabel1 = New Bunifu.Framework.UI.BunifuCustomLabel()
         Me.functional = New System.Windows.Forms.Panel()
         Me.exitBtn = New Bunifu.Framework.UI.BunifuImageButton()
@@ -264,16 +264,6 @@ Partial Class Main
         Me.Logo.Size = New System.Drawing.Size(213, 93)
         Me.Logo.TabIndex = 2
         '
-        'PictureBox4
-        '
-        Me.PictureBox4.Image = Global.Flash_Card_Maker.My.Resources.Resources.icons8_brain_50px
-        Me.PictureBox4.Location = New System.Drawing.Point(151, 20)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(58, 49)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox4.TabIndex = 3
-        Me.PictureBox4.TabStop = False
-        '
         'studentassistant
         '
         Me.studentassistant.AutoSize = True
@@ -285,6 +275,16 @@ Partial Class Main
         Me.studentassistant.Size = New System.Drawing.Size(107, 16)
         Me.studentassistant.TabIndex = 5
         Me.studentassistant.Text = "student assistant"
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = Global.Flash_Card_Maker.My.Resources.Resources.icons8_brain_50px
+        Me.PictureBox4.Location = New System.Drawing.Point(151, 20)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(58, 49)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox4.TabIndex = 3
+        Me.PictureBox4.TabStop = False
         '
         'BunifuCustomLabel1
         '
@@ -405,7 +405,7 @@ Partial Class Main
         'output
         '
         Me.output.BorderColor = System.Drawing.Color.SeaGreen
-        Me.output.Font = New System.Drawing.Font("Century Gothic", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.output.Font = New System.Drawing.Font("Century Gothic", 15.0!)
         Me.output.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(92, Byte), Integer))
         Me.output.Location = New System.Drawing.Point(22, 189)
         Me.output.Multiline = True
@@ -417,12 +417,12 @@ Partial Class Main
         'termOrDef
         '
         Me.termOrDef.AutoSize = True
-        Me.termOrDef.Font = New System.Drawing.Font("Century Gothic", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.termOrDef.Font = New System.Drawing.Font("Century Gothic", 15.0!)
         Me.termOrDef.ForeColor = System.Drawing.Color.FromArgb(CType(CType(72, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(207, Byte), Integer))
-        Me.termOrDef.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.termOrDef.Location = New System.Drawing.Point(542, 249)
+        Me.termOrDef.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.termOrDef.Location = New System.Drawing.Point(502, 249)
         Me.termOrDef.Name = "termOrDef"
-        Me.termOrDef.Size = New System.Drawing.Size(55, 19)
+        Me.termOrDef.Size = New System.Drawing.Size(96, 31)
         Me.termOrDef.TabIndex = 1
         Me.termOrDef.Text = "Label4"
         '

@@ -1,0 +1,28 @@
+C:\Users\angelu.angelu-PC\source\repos\Flash Card Maker\Flash Card Maker\bin\Debug\Flash Card Maker.exe.config
+C:\Users\angelu.angelu-PC\source\repos\Flash Card Maker\Flash Card Maker\bin\Debug\Flash Card Maker.exe
+C:\Users\angelu.angelu-PC\source\repos\Flash Card Maker\Flash Card Maker\bin\Debug\Flash Card Maker.pdb
+C:\Users\angelu.angelu-PC\source\repos\Flash Card Maker\Flash Card Maker\bin\Debug\Flash Card Maker.xml
+C:\Users\angelu.angelu-PC\source\repos\Flash Card Maker\Flash Card Maker\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\angelu.angelu-PC\source\repos\Flash Card Maker\Flash Card Maker\bin\Debug\Bunifu_UI_v1.5.3.xml
+C:\Users\angelu.angelu-PC\source\repos\Flash Card Maker\Flash Card Maker\obj\Debug\Flash Card Maker.vbprojAssemblyReference.cache
+C:\Users\angelu.angelu-PC\source\repos\Flash Card Maker\Flash Card Maker\obj\Debug\Flash_Card_Maker.Resources.resources
+C:\Users\angelu.angelu-PC\source\repos\Flash Card Maker\Flash Card Maker\obj\Debug\Flash Card Maker.vbproj.GenerateResource.cache
+C:\Users\angelu.angelu-PC\source\repos\Flash Card Maker\Flash Card Maker\obj\Debug\Flash Card Maker.vbproj.CopyComplete
+C:\Users\angelu.angelu-PC\source\repos\Flash Card Maker\Flash Card Maker\obj\Debug\Flash Card Maker.exe
+C:\Users\angelu.angelu-PC\source\repos\Flash Card Maker\Flash Card Maker\obj\Debug\Flash Card Maker.xml
+C:\Users\angelu.angelu-PC\source\repos\Flash Card Maker\Flash Card Maker\obj\Debug\Flash Card Maker.pdb
+C:\Users\angelu.angelu-PC\source\repos\Flash Card Maker\Flash Card Maker\obj\Debug\Flash_Card_Maker.Main.resources
+C:\Users\angelu.angelu-PC\Desktop\repos\Flash Card Maker\Flash Card Maker\bin\Debug\Flash Card Maker.exe.config
+C:\Users\angelu.angelu-PC\Desktop\repos\Flash Card Maker\Flash Card Maker\bin\Debug\Flash Card Maker.exe
+C:\Users\angelu.angelu-PC\Desktop\repos\Flash Card Maker\Flash Card Maker\bin\Debug\Flash Card Maker.pdb
+C:\Users\angelu.angelu-PC\Desktop\repos\Flash Card Maker\Flash Card Maker\bin\Debug\Flash Card Maker.xml
+C:\Users\angelu.angelu-PC\Desktop\repos\Flash Card Maker\Flash Card Maker\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\angelu.angelu-PC\Desktop\repos\Flash Card Maker\Flash Card Maker\bin\Debug\Bunifu_UI_v1.5.3.xml
+C:\Users\angelu.angelu-PC\Desktop\repos\Flash Card Maker\Flash Card Maker\obj\Debug\Flash Card Maker.vbprojAssemblyReference.cache
+C:\Users\angelu.angelu-PC\Desktop\repos\Flash Card Maker\Flash Card Maker\obj\Debug\Flash_Card_Maker.Main.resources
+C:\Users\angelu.angelu-PC\Desktop\repos\Flash Card Maker\Flash Card Maker\obj\Debug\Flash_Card_Maker.Resources.resources
+C:\Users\angelu.angelu-PC\Desktop\repos\Flash Card Maker\Flash Card Maker\obj\Debug\Flash Card Maker.vbproj.GenerateResource.cache
+C:\Users\angelu.angelu-PC\Desktop\repos\Flash Card Maker\Flash Card Maker\obj\Debug\Flash Card Maker.vbproj.CopyComplete
+C:\Users\angelu.angelu-PC\Desktop\repos\Flash Card Maker\Flash Card Maker\obj\Debug\Flash Card Maker.exe
+C:\Users\angelu.angelu-PC\Desktop\repos\Flash Card Maker\Flash Card Maker\obj\Debug\Flash Card Maker.xml
+C:\Users\angelu.angelu-PC\Desktop\repos\Flash Card Maker\Flash Card Maker\obj\Debug\Flash Card Maker.pdb

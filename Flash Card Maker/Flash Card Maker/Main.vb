@@ -13,6 +13,7 @@ Public Class Main
     Private seen As Boolean
     Private atFlashCards As Boolean
 
+
     'This function is run at startup
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Retrieve data of collection from saved file at first load

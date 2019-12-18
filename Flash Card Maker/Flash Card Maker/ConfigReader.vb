@@ -39,7 +39,6 @@ Module ConfigReader
         lineNumber = 0
         found1stHash = False
         found2ndHash = False
-
         makeSet(line)
     End Sub
     Function makeSet(line As String) As String
@@ -66,28 +65,24 @@ Module ConfigReader
         If lineNumber = 1 Then 'token as title
             currTitle = New String(line) 'save title
 
-            MessageBox.Show("Title: " + line)
             lineNumber = lineNumber + 1
             makeSet(sr.ReadLine)
         End If
 
         If lineNumber = 2 Then 'token as date
             currDate = New String(line) 'save date
-            MessageBox.Show("Date: " + line)
             lineNumber = lineNumber + 1
             makeSet(sr.ReadLine)
         End If
 
         If lineNumber = 3 Then
-            MessageBox.Show("Item: " + line)
             Dim comma As Integer
             comma = getIndexOf(line)
             Dim term, def As String
             term = getTerm(line, comma)
             def = getDef(line, comma)
             currItems.Add(New Item(def, term)) 'Add the definition and term to currItems
-            MessageBox.Show(term)
-            MessageBox.Show(def)
+
             makeSet(sr.ReadLine)
         End If
         If line.Contains("Set creation: enabled") Then
